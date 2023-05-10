@@ -8,19 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var users: [User] = []
+    @State private var isLoading = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        NavigationView {
+            VStack {
+                if isLoading {
+                    ProgressView()
+                } else {
+                    List(users, id: \.id) {
+                        user in
+                        Text(user.firstName)
+                    }
+                }
+                
+            }
         }
-        .padding()
+        .navigationTitle("UserScreen")
+        .onAppear {
+            Task {
+                isLoading = true
+                do {
+                    
+                    let userlist: UserList = try await APIManager().request(urlString: "https://dummyjson.com/users")
+                    self.users = userlist.users
+                } catch {
+                    print(error)
+                }
+                isLoading = false
+            }
+        }
     }
+
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+    static var previews: some View{
         ContentView()
     }
 }
+
+

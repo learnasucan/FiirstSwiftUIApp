@@ -11,6 +11,8 @@
 		882BE67D2A029A3E00C6E313 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BE67C2A029A3E00C6E313 /* ContentView.swift */; };
 		882BE67F2A029A4400C6E313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882BE67E2A029A4400C6E313 /* Assets.xcassets */; };
 		882BE6822A029A4400C6E313 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882BE6812A029A4400C6E313 /* Preview Assets.xcassets */; };
+		888DECFB2A0BC30400BB5B5E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888DECFA2A0BC30400BB5B5E /* APIManager.swift */; };
+		888DECFD2A0BCA3000BB5B5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888DECFC2A0BCA3000BB5B5E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		882BE67C2A029A3E00C6E313 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		882BE67E2A029A4400C6E313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882BE6812A029A4400C6E313 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		888DECFA2A0BC30400BB5B5E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		888DECFC2A0BCA3000BB5B5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				882BE67C2A029A3E00C6E313 /* ContentView.swift */,
 				882BE67E2A029A4400C6E313 /* Assets.xcassets */,
 				882BE6802A029A4400C6E313 /* Preview Content */,
+				888DECFA2A0BC30400BB5B5E /* APIManager.swift */,
+				888DECFC2A0BCA3000BB5B5E /* User.swift */,
 			);
 			path = FiirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888DECFD2A0BCA3000BB5B5E /* User.swift in Sources */,
+				888DECFB2A0BC30400BB5B5E /* APIManager.swift in Sources */,
 				882BE67D2A029A3E00C6E313 /* ContentView.swift in Sources */,
 				882BE67B2A029A3E00C6E313 /* FiirstSwiftUIAppApp.swift in Sources */,
 			);
