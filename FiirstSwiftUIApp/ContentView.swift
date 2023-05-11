@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var users: [User] = []
-    @State private var isLoading = false
+    @ObservedObject var viewModel: UserListViewModel
     
     var body: some View {
         
         NavigationView {
             VStack {
-                if isLoading {
+                if viewModel.isLoading {
                     ProgressView()
                 } else {
-                    List(users, id: \.id) {
+                    List(viewModel.users, id: \.id) {
                         user in
                         Text(user.firstName)
                     }
@@ -29,25 +28,16 @@ struct ContentView: View {
         .navigationTitle("UserScreen")
         .onAppear {
             Task {
-                isLoading = true
-                do {
-                    
-                    let userlist: UserList = try await APIManager().request(urlString: "https://dummyjson.com/users")
-                    self.users = userlist.users
-                } catch {
-                    print(error)
-                }
-                isLoading = false
+                 viewModel.fetcheUsers()
             }
         }
     }
-
-    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View{
-        ContentView()
+        ContentView(viewModel: UserListViewModel())
     }
 }
 

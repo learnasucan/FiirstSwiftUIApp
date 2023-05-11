@@ -13,6 +13,7 @@
 		882BE6822A029A4400C6E313 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882BE6812A029A4400C6E313 /* Preview Assets.xcassets */; };
 		888DECFB2A0BC30400BB5B5E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888DECFA2A0BC30400BB5B5E /* APIManager.swift */; };
 		888DECFD2A0BCA3000BB5B5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888DECFC2A0BCA3000BB5B5E /* User.swift */; };
+		888DECFF2A0BDBB300BB5B5E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888DECFE2A0BDBB300BB5B5E /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		882BE6812A029A4400C6E313 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		888DECFA2A0BC30400BB5B5E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		888DECFC2A0BCA3000BB5B5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		888DECFE2A0BDBB300BB5B5E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				882BE6802A029A4400C6E313 /* Preview Content */,
 				888DECFA2A0BC30400BB5B5E /* APIManager.swift */,
 				888DECFC2A0BCA3000BB5B5E /* User.swift */,
+				888DECFE2A0BDBB300BB5B5E /* UserListViewModel.swift */,
 			);
 			path = FiirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				888DECFB2A0BC30400BB5B5E /* APIManager.swift in Sources */,
 				882BE67D2A029A3E00C6E313 /* ContentView.swift in Sources */,
 				882BE67B2A029A3E00C6E313 /* FiirstSwiftUIAppApp.swift in Sources */,
+				888DECFF2A0BDBB300BB5B5E /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
